@@ -1,0 +1,311 @@
+.submitbtn{
+  border-radius: 0 5px 5px 0;
+	float: left;
+	padding: 6px;
+	border-left: 0;
+	margin-top: 41px;
+	margin-left: 0px;
+	font-size: 16px;
+	width: auto;
+  height: 20px;
+	background-color: white;
+  cursor: pointer;
+	transition: 1s;
+  border: none
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.signcont{
+  margin-top: 230px !important;
+  margin-bottom: 50px !important;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  background-color: #ffde59;
+}
+.signcont .option1{
+  font-size: 17px;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+.signcont .option1 a{
+  font-size: 17px;
+  text-align: center;
+  margin: 20px 0 20px 0;
+  color: #844f4f;
+}
+.signcont .title{
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  color: #844f4f;
+  margin-bottom: 50px;
+}
+.signcont .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 145px;
+  border-radius: 5px;
+  background-color: #844f4f;
+}
+.signcont form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #844f4f;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #844f4f;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background-color: #844f4f;
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background-color: #e1a23f;
+  }
+ @media(max-width: 584px){
+ .signcont{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .signcont .content .category{
+    flex-direction: column;
+  }
+}
+
+
+/*login*/
+::selection{
+    background: #ff80bf;
+  }
+  .logincont{
+    background: #ffde59;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 230px !important;
+    margin-bottom: 50px !important;
+    margin: 0 auto;
+  }
+  .logincont form .title{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+  color: #844f4f;
+  margin-bottom: 50px;
+  }
+  .logincont form .title:before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 110px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background-color: #844f4f;
+  }
+  .logincont form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+  }
+  .logincont form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+  }
+  .logincont form .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+  }
+  .logincont form .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #844f4f;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  .logincont form .input-box input:focus ~ .underline::after,
+  .logincont form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .logincont form .button{
+    margin: 40px 0 20px 0;
+  }
+  .logincont .input-box input[type="submit"]{
+    background-color: #844f4f;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .logincont .input-box input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background-color: #e1a23f;
+  }
+  .forgot{
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0 25px 0;
+    float: right;
+  }
+  .logincont .option{
+    font-size: 14px;
+    text-align: center;
+    margin: 35px 0 35px 0;
+  }
+  .logincont .option1{
+    font-size: 17px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+  .logincont .option1 a{
+    font-size: 17px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    color: #844f4f;
+  }
+  .logincont .facebook a,
+  .logincont .twitter a{
+    display: block;
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  .logincont .facebook i
+  .logincont .twitter i{
+    padding-right: 12px;
+    font-size: 20px;
+  }
+  .logincont .twitter a{
+    background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+    margin: 20px 0 15px 0;
+  }
+  .logincont .twitter a:hover{
+    background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+    margin: 20px 0 15px 0;
+  }
+  .logincont .facebook a{
+    background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+  }
+  .logincont .facebook a:hover{
+    background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+  }
